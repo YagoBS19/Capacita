@@ -6,6 +6,6 @@ interface BannerProps {
 
 export function Banner({img}:BannerProps){
     return(
-        <Image src = {img} alt = {''} width = {715} height = {300} className = 'rounded-xl'/>
+        <Image src = {img} alt = {''} className = 'rounded-xl'/>
     );
 }

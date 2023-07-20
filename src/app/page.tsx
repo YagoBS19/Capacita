@@ -7,14 +7,18 @@ import Pet1 from '@/assets/Pet.png'
 import Pet2 from '@/assets/Pet2.png'
 import Forms1 from '@/assets/Forms1.png'
 import Forms2 from '@/assets/Forms2.png'
-import  Seco  from '@/assets/SecaAdulto.png';
-import  Sache  from '@/assets/MolhoCarne.png';
-import  Petisco  from '@/assets/Petiscos.png';
+  import  Seca  from '@/assets/BannerR.png';
+  import  Sache  from '@/assets/SacheR.png';
 
 export default function Home() {
   return (
     <main className = ''>
-      <div className = 'grid place-items-center pt-10'>
+      <div className='grid place-items-center'>
+          <div className = 'bg-[#d0c7f8] w-full h-[300px] lg:h-[400px]'>
+              <Image src={''} alt={''}></Image>
+          </div>
+      </div>
+      <div className = 'grid place-items-center mt-10'>
         <Banner img = {Fundo1}/>
       </div>
       <div className = 'grid justify-items-center pt-10 pb-10'>
@@ -29,12 +33,11 @@ export default function Home() {
         </div>
       </div>
       <div className = 'grid place-items-center pt-10 pb-10'>
-        <div className = 'grid justify-items-center pt-6 p-6 h-[1250px] w-[300px] lg:h-[450px] lg:w-[900px] bg-pink-50 rounded-2xl'>
+        <div className = 'grid justify-items-center pt-6 p-6 h-[900px] w-[300px] lg:h-[450px] lg:w-[700px] bg-pink-50 rounded-2xl'>
           <h1 className = 'font-bold text-center text-[24px]'>Conheça Nossos produtos</h1>
-          <div className = 'grid lg:flex lg:justify-center gap-14'>
-            <Card title = {'Rações Secas'} img = {Seco} subtitle = {'Comprar Agora'}/>
-            <Card title = {'Sachês'} img = {Sache} subtitle = {'Comprar Agora'}/>
-            <Card title = {'Petiscos'} img = {Petisco} subtitle = {'Comprar Agora'}/>
+          <div className = 'grid lg:flex lg:justify-center gap-14 text-[18px] font-medium'>
+            <Card title = {'Rações Secas'} img = {Seca} subtitle = {'Saiba Mais'} direct={'/Seco'}/>
+            <Card title = {'Sachês'} img = {Sache} subtitle = {'Saiba Mais'} direct={'/Sache'}/>
           </div>
         </div>
       </div>
